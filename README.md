@@ -16,7 +16,7 @@ $ git clone https://github.com/batuhantrkgl/android_manifest_samsung_j7velte/ -b
 $ repo sync --force-sync --no-clone-bundle -j$(nproc --all)
 
 # Build
-$ lunch
+$  . build/envsetup.sh
 $ . build_ofox.sh j7velte
 ```
 
