@@ -1,27 +1,30 @@
-# OrangeFox Recovery Project
+# ArrowOS Android 10;
 
 ### How to build ###
 
 ```bash
 # Create dirs
-$ mkdir ofox ; cd ofox
+$ mkdir arrowOS-10 ; cd arrowOS-10
 
 # Init repo
-$ repo init --depth=1 -u https://gitlab.com/OrangeFox/Manifest.git -b fox_9.0
+$ repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-10.0
 
 # Clone a3y17lte repo
-$ git clone https://gitlab.com/OrangeFox/device/j7velte.git -b fox_9.0 device/samsung/j7velte
+$ git clone https://github.com/batuhantrkgl/android_manifest_samsung_j7velte/ -b arrowOS-10-test device/samsung/j7velte
 
 # Sync
-$ repo sync --no-repo-verify -c --force-sync --no-clone-bundle --no-tags --optimized-fetch --prune -j`nproc`
+$ repo sync --force-sync --no-clone-bundle -j$(nproc --all)
 
 # Build
-$ mv device/samsung/j7velte/build_ofox.sh .
+$ lunch
 $ . build_ofox.sh j7velte
 ```
 
 ## Credits
+```
 2019 @Astrako
+2022 @Batuhantrkgl
+```
 
 ## Contact
 Telegram support group: https://t.me/joinchat/D1Jk_VbieGBXOWZt2y8O7A
