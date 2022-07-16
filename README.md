@@ -10,7 +10,7 @@ $ mkdir arrowOS-10 ; cd arrowOS-10
 $ repo init -u https://github.com/ArrowOS/android_manifest.git -b arrow-10.0
 
 # Clone a3y17lte repo
-$ git clone https://github.com/batuhantrkgl/android_manifest_samsung_j7velte/ -b arrowOS-10-test device/samsung/j7velte
+$ git clone https://github.com/batuhantrkgl/android_manifest_samsung_j7velte/ -b arrowOS-10-test .repo/local_manifests
 
 # Sync
 $ repo sync --force-sync --no-clone-bundle -j$(nproc --all)
